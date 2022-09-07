@@ -7,12 +7,44 @@ $bigFontSize: 80px;
 $mediumFontSize: 40px;
 $smallFontSize: 15px;
 
-$fontFamily1:'Ubuntu', sans-serif;
-$fontFamily2: 'Kanit', sans-serif;
+@import 'fonts/fonts'; 
+
+// @extend line 140
+
+@mixin transitionHeading ($transition: .8s) {
+
+    .heading:hover{
+        transition: $transition;
+        }
+        
+        .subHeading:hover{
+        transition: $transition;
+        }
+}
+
+@mixin content ($margin: 30px) { 
+
+    .personalProfileContent { 
+        margin: $margin; 
+        }
+        
+        
+        // Contact
+        
+        .contactContent { 
+        margin: $margin; 
+        }
+
+}
+
+
+
 
 $size: 50px; 
 $border: solid; 
 $rightBarMargin: 15px; 
+
+
 
 
 // Build
@@ -22,7 +54,7 @@ $rightBarMargin: 15px;
 
 body, html { overflow-x: hidden; margin: 0px; }
 
-.bar {   
+.bar  { 
 color: $white; 
 padding: 15px;
 margin: 15px;
@@ -35,6 +67,7 @@ background-attachment: fixed;
 letter-spacing: 5px;
 }
 
+
 // Include and Mixin for Underline
 
 // .underline { @include underline($size, $border ); }
@@ -46,7 +79,7 @@ letter-spacing: 5px;
 
 .heading { font-family: $fontFamily2; 
 display: flex; justify-content: center;
-margin-top: 50px;
+margin-top: $size;
 font-size: $bigFontSize;
 transition-delay: .5s;
 transition: .8s;
@@ -61,12 +94,10 @@ transition: .8s;
 
 .heading:hover{
 font-size: 83px;
-transition: .8s;
 }
 
 .subHeading:hover{
 font-size: 43px;
-transition: .8s;
 }
 
 
@@ -85,18 +116,15 @@ transition: .8s;
 
 // Personal Profile
 
-.personalProfileContent { 
+ .personalProfileContent { 
 font-family: $fontFamily2;
-margin: 30px; 
 }
 
 
-// Contact
+//Contact
 
-.contactContent { 
-margin: 30px; 
+.contactContent {  
 font-family: $fontFamily2;
-
 }
 
 a{ color: inherit; text-decoration: underline; }
@@ -106,7 +134,7 @@ a:hover{ color: maroon; }
 // Education 
 
 .educationContent{ 
-margin: 30px;
+margin: 2px;
 font-family: $fontFamily2;
 margin-bottom: 100px;
 }
@@ -133,7 +161,8 @@ margin-left: $rightBarMargin;
 
 .workExperienceContent {
 
-margin-left: $rightBarMargin;
+@extend .skillsContent; 
+
 }
  
 

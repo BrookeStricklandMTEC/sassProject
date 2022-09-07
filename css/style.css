@@ -37,12 +37,10 @@ body, html {
 
 .heading:hover {
   font-size: 83px;
-  transition: 0.8s;
 }
 
 .subHeading:hover {
   font-size: 43px;
-  transition: 0.8s;
 }
 
 .leftBar {
@@ -57,11 +55,9 @@ body, html {
 
 .personalProfileContent {
   font-family: "Kanit", sans-serif;
-  margin: 30px;
 }
 
 .contactContent {
-  margin: 30px;
   font-family: "Kanit", sans-serif;
 }
 
@@ -75,7 +71,7 @@ a:hover {
 }
 
 .educationContent {
-  margin: 30px;
+  margin: 2px;
   font-family: "Kanit", sans-serif;
   margin-bottom: 100px;
 }
@@ -90,11 +86,7 @@ a:hover {
   background-image: linear-gradient(#a13f3d, #978686);
 }
 
-.skillsContent {
-  margin-left: 15px;
-}
-
-.workExperienceContent {
+.skillsContent, .workExperienceContent {
   margin-left: 15px;
 }
 
