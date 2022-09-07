@@ -1,0 +1,59 @@
+body, html {
+  overflow-x: hidden;
+  margin: 0px;
+}
+
+.bar {
+  color: white;
+  padding: 15px;
+  margin: 15px;
+  background-image: url(../images/background3.png);
+  background-size: cover;
+  height: 330px;
+  width: 1435px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  letter-spacing: 5px;
+}
+
+.heading {
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 80px;
+  transition-delay: 0.5s;
+  transition: 0.8s;
+}
+
+.subHeading {
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  transition-delay: 0.5s;
+  transition: 0.8s;
+}
+
+.heading:hover {
+  font-size: 83px;
+  transition: 0.8s;
+}
+
+.subHeading:hover {
+  font-size: 43px;
+  transition: 0.8s;
+}
+
+.personalProfileContent {
+  display: flex;
+  flex-direction: column;
+  font-family: "Kanit", sans-serif;
+  margin: 10px;
+}
+
+.personalProfilePgraph {
+  margin-right: 1100px;
+}
+
+/*# sourceMappingURL=style.css.map */

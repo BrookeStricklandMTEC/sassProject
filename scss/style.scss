@@ -1,0 +1,94 @@
+
+// Variables
+
+$white: white; 
+
+$bigFontSize: 80px;
+$mediumFontSize: 40px;
+$smallFontSize: 15px;
+
+$fontFamily1:'Ubuntu', sans-serif;
+$fontFamily2: 'Kanit', sans-serif;
+
+$size: 50px; 
+$border: solid; 
+
+
+// Build
+// 
+// Bar
+
+body, html { overflow-x: hidden; margin: 0px; }
+
+.bar {   
+color: $white; 
+padding: 15px;
+margin: 15px;
+background-image: url(../images/background3.png); 
+background-size: cover;
+height: 330px;
+width: 1435px;
+background-repeat: no-repeat;
+background-attachment: fixed;
+letter-spacing: 5px;
+}
+
+// Include and Mixin for Underline
+
+// .underline { @include underline($size, $border ); }
+
+// @mixin underline($size, $border){} 
+
+// 
+
+
+.heading { font-family: $fontFamily2; 
+display: flex; justify-content: center;
+margin-top: 50px;
+font-size: $bigFontSize;
+transition-delay: .5s;
+transition: .8s;
+}
+
+.subHeading { font-family: $fontFamily2; 
+display: flex; justify-content: center;
+font-size: $mediumFontSize;
+transition-delay: .5s;
+transition: .8s;
+}
+
+.heading:hover{
+font-size: 83px;
+transition: .8s;
+}
+
+.subHeading:hover{
+font-size: 43px;
+transition: .8s;
+}
+
+// Personal Profile
+
+.leftBar{ 
+background-color: salmon;}
+
+.personalProfileContent { 
+display: flex;
+flex-direction: column;
+font-family: $fontFamily2;
+margin: 10px; 
+}
+
+.personalProfilePgraph{
+margin-right: 1100px;
+
+}
+
+
+
+
+
+
+
+
+
