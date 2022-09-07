@@ -12,9 +12,11 @@ $fontFamily2: 'Kanit', sans-serif;
 
 $size: 50px; 
 $border: solid; 
+$rightBarMargin: 15px; 
 
 
 // Build
+
 // 
 // Bar
 
@@ -67,21 +69,27 @@ font-size: 43px;
 transition: .8s;
 }
 
+
+// Left Bar
+
+.leftBar { 
+    margin: 30px 5px 30px 0px;
+    margin-left: 200px;
+    padding: 0px; 
+    display: flex;
+    flex-direction: column;
+    flex: 30%;
+    position: absolute;
+    }
+
+
 // Personal Profile
 
-
-
 .personalProfileContent { 
-display: flex;
-flex-direction: column;
 font-family: $fontFamily2;
 margin: 30px; 
 }
 
-.personalProfilePgraph{
-margin-right: 1100px;
-
-}
 
 // Contact
 
@@ -91,17 +99,43 @@ font-family: $fontFamily2;
 
 }
 
+a{ color: inherit; text-decoration: underline; }
+
+a:hover{ color: maroon; }
+
 // Education 
 
 .educationContent{ 
 margin: 30px;
 font-family: $fontFamily2;
-
+margin-bottom: 100px;
 }
 
 
+// Right Bar
+
+.rightBar{
+    margin: 75px 50px 30px 5px;
+    margin-left: 755px; 
+    display: flex;
+    flex-direction: column;
+    flex: 70%;
+    font-family: $fontFamily2;
+   background-image: linear-gradient( #a13f3d , #978686);
+}
 
 
+.skillsContent { 
+
+margin-left: $rightBarMargin; 
+
+}
+
+.workExperienceContent {
+
+margin-left: $rightBarMargin;
+}
+ 
 
 
 
