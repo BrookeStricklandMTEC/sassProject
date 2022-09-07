@@ -49,11 +49,21 @@ body, html {
   display: flex;
   flex-direction: column;
   font-family: "Kanit", sans-serif;
-  margin: 10px;
+  margin: 30px;
 }
 
 .personalProfilePgraph {
   margin-right: 1100px;
+}
+
+.contactContent {
+  margin: 30px;
+  font-family: "Kanit", sans-serif;
+}
+
+.educationContent {
+  margin: 30px;
+  font-family: "Kanit", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
